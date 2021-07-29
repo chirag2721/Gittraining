@@ -1,0 +1,20 @@
+proc sql;
+   create table DH_R4.AGENCY_DELTA as
+      select
+         AGCY_ID,
+         AGCY_KEY,
+         ETL_ROW_EFF_DTS,
+         ETL_ROW_EXP_DTS,
+         SOURCE_SYSTEM,
+         AGCY_NAME,
+         ROW_PROC_DTS,
+         ETL_CURR_ROW_FL,
+         ETL_LATE_ARRIVING_FL,
+         ETL_ACTIVE_FL,
+         ETL_ADD_DTS,
+         ETL_LAST_UPDATE_DTS,
+         Z_RE_NO
+   from DH_MSSQL.AGENCY_DELTA
+      
+   ;
+quit;
