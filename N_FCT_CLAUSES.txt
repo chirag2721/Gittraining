@@ -14,7 +14,8 @@ proc sql;
          ETL_ADD_DTS,
          ETL_LAST_UPDATE_DTS,
          Z_RE_NO,
-	 BICC_UPD_DT
+	 BICC_UPD_DT,
+         POLICY_DT
    from DH_MSSQL.AGENCY_DELTA
       
    ;
