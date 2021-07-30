@@ -15,7 +15,9 @@ proc sql;
          ETL_LAST_UPDATE_DTS,
          Z_RE_NO,
 	 BICC_UPD_DT,
-         POLICY_DT
+         POLICY_DT,
+	 STATUS_FL,
+	 POL_KEY
    from DH_MSSQL.AGENCY_DELTA
       
    ;
